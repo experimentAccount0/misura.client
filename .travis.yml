@@ -41,8 +41,8 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3
 script:
-  - nosetests -vv --with-coverage --cover-package=misura --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_misura.client_7b86d77462_1
-  - python -m properform Push 47.88.50.110:15554 asdf_misura.client_7b86d77462_1 ./profile_misura.client_7b86d77462_1
+  - nosetests -vv --with-coverage --cover-package=misura --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_misura.client_7b86d77462_2
+  - python -m properform Push 47.88.50.110:15554 asdf_misura.client_7b86d77462_2 ./profile_misura.client_7b86d77462_2
 
 
 cache:
@@ -51,4 +51,4 @@ cache:
     - $HOME/.cache/pip
 after_success:
   - coveralls
- #2017-08-13 16:50:04 modified at 0 #2017-08-13 16:50:09 modified at 1
+ #2017-08-13 16:50:04 modified at 0 #2017-08-13 16:50:09 modified at 1 #2017-08-13 16:50:13 modified at 2
